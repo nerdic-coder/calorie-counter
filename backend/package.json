@@ -1,0 +1,29 @@
+{
+  "name": "calorie-counter-backend",
+  "version": "1.0.0",
+  "description": "An app that counts calories using AI",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=calories",
+    "start:chapter": "functions-framework --target=add-chapter --port 8082",
+    "start:delete": "functions-framework --target=delete --port 8081",
+    "lint": "eslint src/**/*.js"
+  },
+  "author": "The Nerdic Coder",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.1",
+    "express": "^4.19.2",
+    "handlebars": "^4.7.8",
+    "openai": "^4.52.7",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+}
